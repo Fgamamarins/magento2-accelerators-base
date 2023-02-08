@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to https://www.fcamara.com.br/ for more information.
+ *
+ * @Agency    Black Soul Foda. (http://www.blacksoulfoda.com.br)
+ * @author    Fausto Marins <faustogmjr@gmail.com>
+ * @co-author Yan Rocha <seila@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Icon on Admin Menu -->
+        <add id="BlackSoul_Base::base"
+             title="Black Soul"
+             module="BlackSoul_Base"
+             sortOrder="70"
+             resource="BlackSoul_Base::base" />
+
+        <!-- Init First Title -->
+        <add id="BlackSoul_Base::modules"
+             title="Modules"
+             module="BlackSoul_Base"
+             sortOrder="10"
+             resource="BlackSoul_Base::modules"
+             parent="BlackSoul_Base::base" />
+
+        <add id="BlackSoul_Base::modules_fix"
+             title="Modules Fix"
+             module="BlackSoul_Base"
+             sortOrder="10"
+             resource="BlackSoul_Base::modules_fix"
+             parent="BlackSoul_Base::base" />
+        <!-- End First Title (fix is necessary to functioning) -->
+
+<!--        &lt;!&ndash; Init Second Title &ndash;&gt;-->
+<!--        <add id="BlackSoul_Base::title_two"-->
+<!--             title="Title Two"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="20"-->
+<!--             resource="BlackSoul_Base::title_two"-->
+<!--             parent="BlackSoul_Base::base" />-->
+
+<!--        <add id="BlackSoul_Base::title_two_fix"-->
+<!--             title="Title Two Fix"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="20"-->
+<!--             resource="BlackSoul_Base::title_two_fix"-->
+<!--             parent="BlackSoul_Base::base" />-->
+<!--        &lt;!&ndash; End Second Title (fix is necessary to functioning) &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Init Third Title &ndash;&gt;-->
+<!--        <add id="BlackSoul_Base::title_three"-->
+<!--             title="Title Three"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="20"-->
+<!--             resource="BlackSoul_Base::title_three"-->
+<!--             parent="BlackSoul_Base::base" />-->
+
+<!--        <add id="BlackSoul_Base::title_three_fix"-->
+<!--             title="Title Three Fix"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="20"-->
+<!--             resource="BlackSoul_Base::title_three_fix"-->
+<!--             parent="BlackSoul_Base::base" />-->
+<!--        &lt;!&ndash; End Third Title (fix is necessary to functioning) &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Init Second Title Content &ndash;&gt;-->
+<!--        <add id="BlackSoul_Base::content_one_two"-->
+<!--             title="Content One"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="10" action="adminhtml/system_config/edit/section/list_gallery"-->
+<!--             resource="BlackSoul_Base::content_one_two"-->
+<!--             parent="BlackSoul_Base::title_two"/>-->
+
+<!--        <add id="BlackSoul_Base::content_two_two"-->
+<!--             title="Content Two"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="10" action="adminhtml/system_config/edit/section/list_gallery"-->
+<!--             resource="BlackSoul_Base::content_two_two"-->
+<!--             parent="BlackSoul_Base::title_two"-->
+<!--             target="_blank"/>-->
+<!--        &lt;!&ndash; End Second Title Content &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Init Second Title Content &ndash;&gt;-->
+<!--        <add id="BlackSoul_Base::content_one_three"-->
+<!--             title="Content One"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="10" action="adminhtml/system_config/edit/section/list_gallery"-->
+<!--             resource="BlackSoul_Base::content_one_three"-->
+<!--             parent="BlackSoul_Base::title_three"/>-->
+
+<!--        <add id="BlackSoul_Base::content_two_three"-->
+<!--             title="Content Two"-->
+<!--             module="BlackSoul_Base"-->
+<!--             sortOrder="10" action="adminhtml/system_config/edit/section/list_gallery"-->
+<!--             resource="BlackSoul_Base::content_two_three"-->
+<!--             parent="BlackSoul_Base::title_three"-->
+<!--             target="_blank"/>-->
+<!--        &lt;!&ndash; End Second Title Content &ndash;&gt;-->
+
+    </menu>
+</config>
